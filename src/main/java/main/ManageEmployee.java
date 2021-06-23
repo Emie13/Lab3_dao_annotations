@@ -36,14 +36,16 @@ public class ManageEmployee {
 //		}
 		
 		DaoEmployee daoEmployee = new DaoEmployee();
-		Integer empID1 = daoEmployee.addEmployee("Emeline", "Peyrot", 35000);
-		System.out.println(empID1);
+		//Integer empID1 = daoEmployee.addEmployee("Emeline", "Peyrot", 35000);
+		//System.out.println(empID1);
 
 	
 		List<Employee> listEmployees = daoEmployee.listEmployees();
 		System.out.println(listEmployees);
 
-
+		daoEmployee.updateEmployee(21, 37000);
+		
+		//daoEmployee.deleteEmployee(20);
 
 
 
